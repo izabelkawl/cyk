@@ -1,0 +1,13 @@
+<button>
+  <ng-container *ngTemplateOutlet="icons; context: { iconType: 'add' }" />
+  {{ title }}
+</button>
+
+<ng-template #icons let-iconType="iconType">
+  @switch (iconType) { 
+    @case ('add') {
+  <img src="icons/add.svg" />
+  } 
+  @default { }
+}
+</ng-template>

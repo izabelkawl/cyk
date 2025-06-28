@@ -1,0 +1,50 @@
+@use './../../../assets/styles/variables' as *;
+
+.sidebar {
+  background-color: $primaryColor;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-logo {
+    width: 100px;
+    height: auto;
+    margin: 100px 0 50px;
+    cursor: pointer;
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 80%;
+
+    &__item {
+      cursor: pointer;
+      padding: 20px 40px;
+      border-radius: 10px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      color: $textColor;
+
+      img {
+        opacity: 0.3;
+      }
+
+      &:hover {
+        color: $whiteColor;
+        background-color: #ffffff0c;
+
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

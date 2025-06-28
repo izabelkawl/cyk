@@ -1,0 +1,12 @@
+<div class="sidebar">
+  <img class="sidebar-logo" src="icons/logo.svg" alt="logo" routerLink="/" />
+  <ul class="sidebar-list" role="listbox">
+    @for (item of config; track $index) {
+
+    <li class="sidebar-list__item" [routerLink]="item.link">
+      <img [src]="item.icon" alt="dashboard icon" />
+      {{ item.name | translate }}
+    </li>
+    }
+  </ul>
+</div>

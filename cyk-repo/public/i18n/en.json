@@ -1,0 +1,17 @@
+{
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "pages": "Pages",
+        "components": "Components",
+        "media": "Media",
+        "settings": "Settings"
+    },
+    "pages": {
+        "addPage": "New page",
+        "table": {
+            "title": "Name",
+            "lastEdited": "Last Edited",
+            "editable": "Action"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use "./../../../assets/styles/variables" as *;
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 5px 5px;
+  border: none;
+  gap: 5px;
+  background-color: $secondaryColor;
+  color: $whiteColor;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+}

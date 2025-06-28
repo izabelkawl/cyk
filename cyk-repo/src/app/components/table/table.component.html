@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    @for (column of columns; track $index) {
+    <th>{{ ('pages.table.' + column) | translate }}</th>
+    }
+  </tr>
+  @for (item of data; track $index) {
+  <tr>
+    @for (column of columns; track $index) {
+    <td>
+      {{ item[column] }}
+    </td>
+    }
+  </tr>
+  }
+</table>
